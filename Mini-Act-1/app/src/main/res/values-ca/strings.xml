@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">La meva App</string>
     <string name="language_name">Català</string>
-    <string name="button_clicked">Botó presionat!</string>
+    <string name="Toast">Botó presionat!</string>
     <string name="hello_world">Hola món!</string>
-    <string name="button_text">Botó</string>
+    <string name="Action1">Botó</string>
 </resources>

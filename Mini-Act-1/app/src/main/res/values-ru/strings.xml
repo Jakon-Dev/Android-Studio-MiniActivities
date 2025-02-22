@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Мое приложение</string>
     <string name="language_name">Русский</string>
-    <string name="button_clicked">Кнопка нажата!</string>
+    <string name="Toast">Кнопка нажата!</string>
     <string name="hello_world">Привет, мир!</string>
-    <string name="button_text">Кнопка</string>
+    <string name="Action1">Кнопка</string>
 </resources>
