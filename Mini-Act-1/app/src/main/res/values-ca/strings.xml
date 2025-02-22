@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">La meva App</string>
+    <string name="language_name">Català</string>
+    <string name="button_clicked">Botó presionat!</string>
+    <string name="hello_world">Hola món!</string>
+    <string name="button_text">Botó</string>
+</resources>
