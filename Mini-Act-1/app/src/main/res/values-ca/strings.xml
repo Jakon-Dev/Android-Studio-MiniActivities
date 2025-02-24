@@ -4,5 +4,5 @@
     <string name="language_name">Català</string>
     <string name="Toast">Botó presionat!</string>
     <string name="hello_world">Hola món!</string>
-    <string name="Action1">Botó</string>
+    <string name="Action1">Presiona per a fer un Toast</string>
 </resources>

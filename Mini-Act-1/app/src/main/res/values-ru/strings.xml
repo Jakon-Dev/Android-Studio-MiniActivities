@@ -4,5 +4,5 @@
     <string name="language_name">Русский</string>
     <string name="Toast">Кнопка нажата!</string>
     <string name="hello_world">Привет, мир!</string>
-    <string name="Action1">Кнопка</string>
+    <string name="Action1">Нажмите, чтобы тост</string>
 </resources>

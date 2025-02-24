@@ -1,6 +1,8 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -19,14 +21,26 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyApplicationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold { paddingValues ->
                     Greeting(
-                        name = "Jakon",
-                        modifier = Modifier.padding(innerPadding)
+                        name = "Android",
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(paddingValues)
                     )
-
                 }
             }
+        }
+
+        setContentView(R.layout.menu)
+
+        val actionButton: Button = findViewById(R.id.button)
+        actionButton.setOnClickListener {
+            Toast.makeText(
+                this,
+                getString(R.string.Toast),
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 }
