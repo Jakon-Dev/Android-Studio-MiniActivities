@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -35,12 +36,15 @@ class MainActivity : ComponentActivity() {
         setContentView(R.layout.menu)
 
         val actionButton: Button = findViewById(R.id.button)
+        val textView = findViewById<TextView>(R.id.textView)
+
         actionButton.setOnClickListener {
             Toast.makeText(
                 this,
                 getString(R.string.Toast),
                 Toast.LENGTH_SHORT
             ).show()
+            textView.text = getString(R.string.Toast)
         }
     }
 }

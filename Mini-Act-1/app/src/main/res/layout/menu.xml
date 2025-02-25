@@ -25,7 +25,8 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:text="@string/Action1" />
+        android:text="@string/Action1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <ImageView
         android:id="@+id/imageView2"
