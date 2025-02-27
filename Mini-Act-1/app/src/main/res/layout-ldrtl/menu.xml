@@ -9,13 +9,13 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="157dp"
+        android:layout_height="248dp"
         android:src="@drawable/flag" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="27dp"
+        android:layout_height="109dp"
         android:fontFamily="@font/baloo"
         android:text="@string/hello_world"
         android:textAlignment="center"
@@ -31,7 +31,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="229dp"
         android:src="@drawable/item1" />
 
 </LinearLayout>
