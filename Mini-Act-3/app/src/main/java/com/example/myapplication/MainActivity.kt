@@ -8,6 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
@@ -59,17 +60,19 @@ fun GreetingText() {
 
 @Composable
 fun ValueCalculator() {
-    var value by remember { mutableStateOf(1000) }
-    val increaseFactor = if (Locale.getDefault().language == "es") 1.2 else 1.1
+    var initialValue = if (Locale.getDefault().language == "es") 2000000 else if (Locale.getDefault().language == "ca") 4000000 else if (Locale.getDefault().language == "ru") 7000000 else 1000000
+    var value by rememberSaveable { mutableIntStateOf(initialValue) }
+    val increaseFactor = if (Locale.getDefault().language == "es") 1.2 else if (Locale.getDefault().language == "ca") 1.4 else if (Locale.getDefault().language == "ru") 1.8 else 1.1
+
 
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = "Valor inicial: $value", style = MaterialTheme.typography.bodyLarge)
+        Text(text = "PIB 1: $initialValue", style = MaterialTheme.typography.bodyLarge)
         Spacer(modifier = Modifier.height(8.dp))
         Button(onClick = { value = (value * increaseFactor).toInt() }) {
             Text(text = stringResource(id = R.string.Action1))
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(text = "Valor calculado: $value", style = MaterialTheme.typography.bodyLarge)
+        Text(text = "PIB 2: $value", style = MaterialTheme.typography.bodyLarge)
     }
 }
 
